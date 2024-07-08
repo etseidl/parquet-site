@@ -33,7 +33,7 @@ groups.  The file metadata contains the locations of all the column chunk
 start locations.  More details on what is contained in the metadata can be found
 in the Thrift definition.
 
-File Metadata is written after the data to allow for single pass writing.
+File metadata is written after the data to allow for single pass writing.
 
 Readers are expected to first read the file metadata to find all the column
 chunks they are interested in.  The columns chunks should then be read sequentially.
